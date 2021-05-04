@@ -12,26 +12,26 @@ function setup(){
     canvas = createCanvas(800,600);
 
     block1 = createSprite(0,580,360,30);
-    block1.shapeColor = "blue";
+    block1.shapeColor = "#e52b50";
 
     block2 = createSprite(295,580,200,30);
-    block2.shapeColor = "orange";
+    block2.shapeColor = "#ffbf00";
 
     block3 = createSprite(515,580,200,30);
-    block3.shapeColor = "red";
+    block3.shapeColor = "#a4c639";
 
     block4 = createSprite(740,580,220,30);
-    block4.shapeColor = "green";
+    block4.shapeColor = "#915c83";
 
     ball = createSprite(random(20,750),100, 40,40);
-    ball.shapeColor = rgb(255,255,255);
+    ball.shapeColor = "#f0ffff";
     ball.velocityX = 4;
     ball.velocityY = 9;
 
 }
 
 function draw() {
-    background(rgb(169,169,169));
+    background(rgb(169,169,169),(rgb(169,169,169),(rgb(169,169,169));
     edges=createEdgeSprites();
     ball.bounceOff(edges);
 
