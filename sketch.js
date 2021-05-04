@@ -31,28 +31,28 @@ function setup(){
 }
 
 function draw() {
-    background(rgb(0,255),rgb(0,255),rgb(0,255));
+    background(#f4bbff);
     edges=createEdgeSprites();
     ball.bounceOff(edges);
 
     if(block1.isTouching(ball) && ball.bounceOff(block1)){
-        ball.shapeColor = "blue";
+        ball.shapeColor =  "#e52b50"
         music.play();
     }
 
     if(block2.isTouching(ball)){
-        ball.shapeColor = "orange";
+        ball.shapeColor = "#ffbf00";
         ball.velocityX = 0;
         ball.velocityY = 0;
         music.stop();
     }
 
     if(block3.isTouching(ball) && ball.bounceOff(block3)){
-        ball.shapeColor = "red";
+        ball.shapeColor = "#a4c639";
     }
 
     if(block4.isTouching(ball) && ball.bounceOff(block4)){
-        ball.shapeColor = "green";
+        ball.shapeColor = "#915c83";
     }
 
     drawSprites();
