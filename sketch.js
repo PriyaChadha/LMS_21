@@ -31,7 +31,7 @@ function setup(){
 }
 
 function draw() {
-    background("#f4bbff");
+    background(0);
     edges=createEdgeSprites();
     ball.bounceOff(edges);
 
